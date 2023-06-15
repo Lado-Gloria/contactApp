@@ -6,132 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".AddcontactActivity">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFirstName"
+        android:layout_width="349dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSecondName"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieSecondName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPhoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilSecondName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPhoneNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="175dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
+
     <ImageView
-        android:id="@+id/ivaddimage"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="34dp"
+        android:id="@+id/ivAvatar"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/secounavatar" />
-
-    <TextView
-        android:id="@+id/tvNames"
-        android:layout_width="130dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="31dp"
-        android:hint="Enter name"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/tvPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivaddimage"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/tvPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="26dp"
-        android:text="Phonenumber"
-        android:hint="Enter phone number"
-        app:layout_constraintBottom_toTopOf="@+id/tvemailadress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivaddimage" />
-
-    <TextView
-        android:id="@+id/tvemailadress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="583dp"
-        android:text=""
-        android:hint="Enter email address"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/ivmine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="45dp"
-        app:layout_constraintEnd_toStartOf="@+id/tvNames"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_person_add_24" />
-
-    <ImageView
-        android:id="@+id/ivmineno"
-        android:layout_width="26dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintEnd_toStartOf="@+id/tvPhone"
-        app:layout_constraintTop_toBottomOf="@+id/ivmine"
-        app:srcCompat="@drawable/ic_baseline_phone_24" />
-
-    <ImageView
-        android:id="@+id/ivmineemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/tvemailadress"
-        app:layout_constraintTop_toBottomOf="@+id/ivmineno"
-        app:srcCompat="@drawable/ic_baseline_email_24" />
-
-    <Button
-        android:id="@+id/btnadbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="188dp"
-        android:text="Add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- Updated Constraints for Contact Details -->
-<!--    <TextView-->
-<!--        android:id="@+id/tvContactName"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Contact Name"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/tvContactPhoneNumber"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvNames"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/tvNames"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tvNames" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvContactPhoneNumber"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Contact Phone Number"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/tvContactEmail"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvPhone"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/tvPhone"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvContactEmail"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Contact Email"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/tvemailadress"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvemailadress"-->
-<!--        app:layout_constraintHorizontal_bias="0.526"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/tvemailadress"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tvemailadress"-->
-<!--        app:layout_constraintVertical_bias="0.0" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
