@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Contactpart</string>
+    <string name="name_is_required">name is required</string>
+    <string name="names_is_required">name is required</string>
+    <string name="contacts_is_required">contacts is required</string>
+    <string name="email_is_required">Email is required</string>
 </resources>

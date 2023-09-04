@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ContactDetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivdetail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="604dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/secounavatar" />
+
+    <TextView
+        android:id="@+id/tvNamedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="16dp"
+        android:text="Gloria Ladoo"
+        app:layout_constraintBottom_toTopOf="@+id/tvphonedetail"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvphonedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="24dp"
+        android:text="078956526"
+        app:layout_constraintBottom_toTopOf="@+id/tvemaildetail"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvemaildetail"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+    <TextView
+        android:id="@+id/tvemaildetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="glorialadoo@gmail.com"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="217dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_phone_24"
+        tools:layout_editor_absoluteY="174dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
